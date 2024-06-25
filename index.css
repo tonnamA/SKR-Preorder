@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(46, 178, 178);
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 48px;
+    margin-top: 200px;
+}
+#output{
+    text-align: center;
+    
+}
+.btn button{
+    width: 300px;
+    height: 100px;
+    margin-left: 600px;
+    margin-top: 100px;
+    border-radius: 20px;
+    background-color: bisque;
+    transition: 0.3s ease;
+
+}
+.btn a{
+    text-decoration: none;
+    transition: 0.3s ease;
+
+}
+.btn h1{
+    text-align: center;
+    color: gray;
+    width: 300px;
+    height: 100px;
+    padding-top:30px ;
+}
+.btn button:hover{
+    transition: 0.3s ease;
+    background-color: gray;
+    
+}
+.btn a h1:hover{
+    color: bisque;
+}
