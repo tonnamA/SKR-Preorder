@@ -5,8 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    
+    <nav>
+        <div class="logo" id="logo"></div>
+    </nav>
 </body>
 </html>
+<script>
+    addEventListener("DOMContentLoaded",function(){
+        const outputElement = document.getElementById("logo")
+        const text = "เพิ่มเติมในอนาคต"
+        const typingspeed = 100;
+
+        let index = 0;
+
+        function type(){
+            if(index<text.length){
+                outputElement.textContent += text.charAt(index)
+                index++;
+                setTimeout(type,typingspeed);
+            }
+        }
+        type()
+    })
+</script>
