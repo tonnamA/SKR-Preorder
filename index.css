@@ -71,14 +71,14 @@ body{
         margin-left:200px ;
     }
 }
-@media (max-width:480px){
+/*@media (max-width:480px){
     body{
-        background-color: white;
+        background-color: bisque;
     }
     .btn button{
-        margin-left: 10px;
+        margin-left: 100px;
     }
-}
+}*/
 @media (max-width:375px){
     body{
         background-color: blue;
