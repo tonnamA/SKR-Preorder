@@ -76,7 +76,7 @@ body{
         background-color: bisque;
     }
     .btn button{
-        margin-left: 100px;
+        margin-left: 50px;
     }
 }
 @media (max-width:375px){
