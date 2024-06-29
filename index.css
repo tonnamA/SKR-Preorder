@@ -45,3 +45,39 @@ body{
 .btn a h1:hover{
     color: bisque;
 }
+@media (min-width:1440px){
+    body{
+        background-color: aquamarine;
+    }
+}
+/*@media (max-width:1440px){
+    body{
+        background-color: blueviolet;
+    }
+}*/
+@media (max-width:1024px){
+    .btn button{
+        margin-left: 350px;
+    }
+    body{
+        background-color: aqua;
+    }
+}
+@media (max-width:768px){
+    body{
+        background-color: gray;
+    }
+    .btn button{
+        margin-left:200px ;
+    }
+}
+@media (max-width:480px){
+    body{
+        background-color: bisque;
+    }
+}
+@media (max-width:375px){
+    body{
+        background-color: blue;
+    }
+}
