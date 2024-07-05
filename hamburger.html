@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,78 +8,162 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <div class="text-first" id="elementoutput"></div>
     </nav>
-    <main>
+    <div class="box-all">
         <div class="box-1">
             <h1>ไฟล์ word โครงงาน</h1>
             <h2>ผู้ขาย : บาสโสด</h2>
             <img src="https://tse1.mm.bing.net/th?id=OIP.gJAPOwU1WF8BjHziFd57yQHaHa&pid=Api&P=0&h=220" alt="">
-            <a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">ซื้อเลย</a>
+            <br>
+            <a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">
+                <h1>ซื้อเลย</h1>
+            </a>
+            <h3>ช่องทางติดต่อผู้พัฒนา Line:@Bassod2560</h3>
         </div>
         <div class="box-1">
             <h1>ไฟล์ word โครงงาน</h1>
             <h2>ผู้ขาย : บาสโสด</h2>
             <img src="https://tse1.mm.bing.net/th?id=OIP.gJAPOwU1WF8BjHziFd57yQHaHa&pid=Api&P=0&h=220" alt="">
-            <a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">ซื้อเลย</a>
+            <br>
+            <a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">
+                <h1>ซื้อเลย</h1>
+            </a>
+            <h3>ช่องทางติดต่อผู้พัฒนา Line:@Bassod2560</h3>
         </div>
-    </main>
-           
+        <div class="box-1">
+            <h1>ไฟล์ word โครงงาน</h1>
+            <h2>ผู้ขาย : บาสโสด</h2>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.gJAPOwU1WF8BjHziFd57yQHaHa&pid=Api&P=0&h=220" alt="">
+            <br>
+            <a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">
+                <h1>ซื้อเลย</h1>
+            </a>
+            <h3>ช่องทางติดต่อผู้พัฒนา Line:@Bassod2560</h3>
+        </div>
+
+    </div>
 </body>
+
 </html>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    *{
+
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    body{
+
+    body {
         background-color: black;
         font-family: "Prompt", sans-serif;
     }
-    #elementoutput{
+
+    #elementoutput {
         font-size: 48px;
         color: white;
         padding-top: 20px;
         text-align: center;
     }
-    main{
+
+    .box-all {
         display: flex;
     }
-    .box-1{
-        margin-left: 200px;
+
+    .box-1 {
+        margin-left: 10px;
         width: 450px;
         height: 450px;
         border-radius: 20px;
         background-color: white;
         margin-top: 20px;
     }
-    .box-1 h1,h2{
+
+    .box-1 h1,
+    h2 {
         text-align: center;
     }
-    .box-1 img{
-        margin-left: 100px;
-    }
-    .box-1 a{
-        padding-top: 50px;
+
+    .box-1 img {
+        margin-left: 120px;
+        width: 200px;
+        height: 200px;
+        border: 2px solid red;
     }
 
+    .box-1 a {
+        margin-top: 50px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        /*margin-left: 200px;*/
+        /*border: 2px solid red;*/
+        text-align: center;
+    }
+
+    .box-1 a h1 {
+        background-color: black;
+        color: white;
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+        border-radius: 15px;
+        margin-left: 150px;
+        padding-top: 10px;
+        margin-top: 10px;
+        transition: 0.3s ease;
+    }
+
+    .box-1 a h1:hover {
+        transition: 0.3s ease;
+        background-color: lightblue;
+        color: lightpink;
+        text-shadow: 0.2em 0.2em 0.2em gray;
+    }
+    .box-1 h3{
+        font-size: 16px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    /*.box-1 button{
+        margin-left:150px ;
+        width: 150px;
+        height: 50px;
+        background-color: black;
+        cursor: pointer;
+    }*/
+    /*.bar a{
+        border-radius: 20px;
+        color: white;
+        background-color: pink;
+    }*/
+
+    /* .bar h1{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+    }*/
 </style>
 <script>
-    addEventListener("DOMContentLoaded",function(){
+    addEventListener("DOMContentLoaded", function () {
         const elementoutput = document.getElementById("elementoutput")
         const text = "ซื้อขายไฟล์"
         const typingspeed = 100;
 
         let index = 0;
 
-        function type(){
-            if(index < text.length){
+        function type() {
+            if (index < text.length) {
                 elementoutput.textContent += text.charAt(index)
                 index++;
                 setTimeout(type, typingspeed)
