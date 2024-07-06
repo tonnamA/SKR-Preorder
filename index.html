@@ -87,18 +87,29 @@
 
     }
     @media(max-width:430px){
-        
+        nav .search input{
+            width: 250px;
+            height: 40px;
+        }
+        nav .text-nav{
+            display: none;
+        }
+        nav .search{
+            margin-left:25px;
+        }
     }
 </style>
 <body>
     <main>
         <div class="menu" id="myMenu">
             <a href="" class="text-main"><h1>หมวดสินค้า</h1></a>
-            <a href=""><h1>อาหาร</h1></a>
-            <a href=""><h1>เครื่องประดับ</h1></a>
-            <a href=""><h1>อุปกรณ์การเรียน</h1></a>
-            <a href=""><h1>หนังสือ</h1></a>
-            <a href=""><h1>การ์ด</h1></a>
+            <div class="all">
+                <a href=""><h1>อาหาร</h1></a>
+                <a href=""><h1>เครื่องประดับ</h1></a>
+                <a href=""><h1>อุปกรณ์การเรียน</h1></a>
+                <a href=""><h1>หนังสือ</h1></a>
+                <a href=""><h1>การ์ด</h1></a>
+            </div>
         </div>
     </main>
 </body>
@@ -112,6 +123,9 @@
     }
     .menu .text-main{
         margin-left: 50px;
+    }
+    .menu .all{
+        display: flex;
     }
     .menu .text-main h1{
         background-color: #FFC1E8;
@@ -128,6 +142,17 @@
         font-size: 20px;
         margin-left: 100px;
        color: #DB55A9;
+    }
+    @media(max-width:430px){
+        .menu .all{
+            display: none;
+        }
+        .menu .text-main{
+            margin-left: 10px;
+        }
+        .menu a h1{
+            margin-left: 30px;
+        }
     }
 </style>
 <body>
@@ -204,6 +229,14 @@
         cursor: pointer;
         transition: 0.3s ease;
         margin-left: 150px;
+    }
+    @media (max-width:430px){
+        .box-all{
+            display: block;
+        }
+        .box-1{
+            margin-left: 0px;
+        }
     }
 </style>
 <body>
