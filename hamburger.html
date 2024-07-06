@@ -1,205 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test-Webapp-Filesell</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <nav>
-        <div class="text-first" id="elementoutput"></div>
+    <nav> 
+        <div class="search">
+            <input type="text" placeholder="search">
+        </div>
+        <div class="text-nav">
+            <a href="" class="a1">รถเข็น</a>
+            <a href="">คำสั่งซื้อ</a>
+            <a href="">การแจ้งเตือน</a>
+            <a href="">ข้อความ</a>
+            <img src="http://pluspng.com/img-png/user-png-icon-big-image-png-2240.png" alt="">
+        </div>
     </nav>
-    <div class="box-all">
-        <div class="box-1">
-            <h1>ไฟล์ word โครงงาน</h1>
-            <h2>ผู้ขาย : บาสโสด</h2>
-            <img src="https://tse1.mm.bing.net/th?id=OIP.gJAPOwU1WF8BjHziFd57yQHaHa&pid=Api&P=0&h=220" alt="">
-            <br>
-            <a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">
-                <h1>ซื้อเลย</h1>
-            </a>
-            <h3>ช่องทางติดต่อผู้พัฒนา Line:@Bassod2560</h3>
-        </div>
-        <div class="box-1">
-            <h1>ไฟล์ word โครงงาน</h1>
-            <h2>ผู้ขาย : บาสโสด</h2>
-            <img src="https://tse1.mm.bing.net/th?id=OIP.gJAPOwU1WF8BjHziFd57yQHaHa&pid=Api&P=0&h=220" alt="">
-            <br>
-            <a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">
-                <h1>ซื้อเลย</h1>
-            </a>
-            <h3>ช่องทางติดต่อผู้พัฒนา Line:@Bassod2560</h3>
-        </div>
-        <div class="box-1">
-            <h1>ไฟล์ word โครงงาน</h1>
-            <h2>ผู้ขาย : บาสโสด</h2>
-            <img src="https://tse1.mm.bing.net/th?id=OIP.gJAPOwU1WF8BjHziFd57yQHaHa&pid=Api&P=0&h=220" alt="">
-            <br>
-            <a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">
-                <h1>ซื้อเลย</h1>
-            </a>
-            <h3>ช่องทางติดต่อผู้พัฒนา Line:@Bassod2560</h3>
-        </div>
-
-    </div>
 </body>
-
-</html>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-    * {
+    *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-
-    body {
-        background-color: black;
+    body{
+        background-color: white;
         font-family: "Prompt", sans-serif;
     }
-
-    #elementoutput {
-        font-size: 48px;
-        color: white;
-        padding-top: 20px;
-        text-align: center;
-    }
-
-    .box-all {
+    nav{
+        background-color: #FFC1E8;
+        width: 100vw;
+        height: 100px;
         display: flex;
     }
+    input::placeholder{
+        color: #B63586;
 
-    .box-1 {
-        margin-left: 10px;
-        width: 450px;
-        height: 450px;
-        border-radius: 20px;
+    }
+    nav .search{
+        margin-left: 100px;
+        padding-top: 20px;
+    }
+    nav .search input{
+        color: #C679AA;
         background-color: white;
-        margin-top: 20px;
-    }
-
-    .box-1 h1,
-    h2 {
-        text-align: center;
-    }
-
-    .box-1 img {
-        margin-left: 120px;
-        width: 200px;
-        height: 200px;
-        border: 2px solid red;
-    }
-
-    .box-1 a {
-        margin-top: 50px;
-        text-decoration: none;
-        cursor: pointer;
-        background-color: black;
-        color: white;
-        /*margin-left: 200px;*/
-        /*border: 2px solid red;*/
-        text-align: center;
-    }
-
-    .box-1 a h1 {
-        background-color: black;
-        color: white;
-        width: 150px;
+        border: 2px solid white;
+        font-size: 24px;
+        border-radius: 20px;
+        width: 300px;
         height: 50px;
-        font-size: 18px;
-        border-radius: 15px;
-        margin-left: 150px;
-        padding-top: 10px;
-        margin-top: 10px;
-        transition: 0.3s ease;
+        padding-left: 20px;
     }
-
-    .box-1 a h1:hover {
-        transition: 0.3s ease;
-        background-color: lightblue;
-        color: lightpink;
-        text-shadow: 0.2em 0.2em 0.2em gray;
+    nav .text-nav{
+        display: flex;
     }
-    .box-1 h3{
-        margin-top: 30px;
-        font-size: 16px;
-        text-align: center;
+    nav .text-nav a{
+        color: #B63586;
+        font-size: 24px;
+        margin-left: 50px;
+        padding-top: 25px;
+        text-decoration: none;
+        transition: 0.4s ease;
+    }
+    nav .text-nav a:hover{
         
+        color: rgb(16, 135, 233);
+    }
+    nav .text-nav .a1{
+        padding-left: 200px;
+    }
+    nav .text-nav img{
+        width: 70px;
+        height: 70px;
+        background-color: #EB7AA5;
+        margin-left:70px ;
+        margin-top: 10px;
+        border-radius: 20px;
+
     }
     @media(max-width:430px){
-        body{
-            background-color: red;
-        }
-        .box-1{
-            width: 300px;
-            height: 300px;
-            margin-left: 40px;
-        }
-        .box-1 h1,h2{
-            font-size: 16px;
-        }
-        .box-1 img{
-            width: 100px;
-            height: 100px;
-            margin-left: 100px;
-        }
-        .box-all{
-            display: block;
-        }
-        .box-1 a h1{
-            margin-left: 100px;
-            width: 100px;
-            height: 50px;
-        }
-        .box-1 h3{
-            font-size: 12px;
-            margin-top: 10px;
-        }
+        
     }
-
-    /*.box-1 button{
-        margin-left:150px ;
+</style>
+<body>
+    <main>
+        <div class="menu" id="myMenu">
+            <a href="" class="text-main"><h1>หมวดสินค้า</h1></a>
+            <a href=""><h1>อาหาร</h1></a>
+            <a href=""><h1>เครื่องประดับ</h1></a>
+            <a href=""><h1>อุปกรณ์การเรียน</h1></a>
+            <a href=""><h1>หนังสือ</h1></a>
+            <a href=""><h1>การ์ด</h1></a>
+        </div>
+    </main>
+</body>
+<style>
+    main{
+        width: 100vw;
+    }
+    .menu{
+        display: flex;
+        margin-top: 20px;
+    }
+    .menu .text-main{
+        margin-left: 50px;
+    }
+    .menu .text-main h1{
+        background-color: #FFC1E8;
         width: 150px;
         height: 50px;
-        background-color: black;
-        cursor: pointer;
-    }*/
-    /*.bar a{
+        text-align: center;
+        padding-top: 5px;
         border-radius: 20px;
-        color: white;
-        background-color: pink;
-    }*/
-
-    /* .bar h1{
-        width: 200px;
-        height: 200px;
-        background-color: pink;
-    }*/
+    }
+    .menu a{
+        text-decoration: none;
+    }
+    .menu a h1{
+        font-size: 20px;
+        margin-left: 100px;
+       color: #DB55A9;
+    }
 </style>
-<script>
-    addEventListener("DOMContentLoaded", function () {
-        const elementoutput = document.getElementById("elementoutput")
-        const text = "ซื้อขายไฟล์"
-        const typingspeed = 100;
-
-        let index = 0;
-
-        function type() {
-            if (index < text.length) {
-                elementoutput.textContent += text.charAt(index)
-                index++;
-                setTimeout(type, typingspeed)
-            }
-        }
-        type()
-    })
-</script>
+<body>
+    <div class="box-all">
+        <div class="box-1">
+            <h1>ชื่อผู้ขาย : 18197 นายอดิลักษณ์ ปามา 406</h1>
+            <h2>ราคา : 100 บาท</h2>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.r_V1rTZB15NMmQTha4DUvgHaHa&pid=Api&P=0&h=220" alt="">
+            <h3>รายละเอียด : สินค้าเพื่อสุขภาพ55555555</h3>
+            <a href=""><h4>สั่งซื้อ</h4></a>
+        </div>
+        <div class="box-1">
+            <h1>ชื่อผู้ขาย : 18197 นายอดิลักษณ์ ปามา 406</h1>
+            <h2>ราคา : 100 บาท</h2>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.r_V1rTZB15NMmQTha4DUvgHaHa&pid=Api&P=0&h=220" alt="">
+            <h3>รายละเอียด : สินค้าเพื่อสุขภาพ55555555</h3>
+            <a href=""><h4>สั่งซื้อ</h4></a>
+        </div><div class="box-1">
+            <h1>ชื่อผู้ขาย : 18197 นายอดิลักษณ์ ปามา 406</h1>
+            <h2>ราคา : 100 บาท</h2>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.r_V1rTZB15NMmQTha4DUvgHaHa&pid=Api&P=0&h=220" alt="">
+            <h3>รายละเอียด : สินค้าเพื่อสุขภาพ55555555</h3>
+            <a href=""><h4>สั่งซื้อ</h4></a>
+        </div>
+    </div>
+</body>
+<style>
+    .box-all{
+        display: flex;
+    }
+    .box-1{
+        width: 400px;
+        height: 400px;
+        background-color: #64C7FF;
+        margin-left: 50px;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+    .box-1 h1,h2{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+        color: #f264be;
+    }
+    .box-1 img{
+        align-items: center;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+       width: 200px;
+       height: 200px;
+       margin-top: 20px;
+       border-radius: 20px;
+    }
+    .box-1 h3{
+        margin-top: 10px;
+        font-size: 18px;
+        text-align: center;
+        color: #f264be;
+    }
+    .box-1 a{
+        text-decoration: none;
+    }
+    .box-1 a h4{
+        font-size: 18px;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        background-color: #C679AA;
+        border-radius: 20px;
+        padding-top: 10px;
+        color: #64C7FF;
+        text-shadow: 0.1em 0.1em 0.1em gray;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-left: 150px;
+    }
+</style>
+<body>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <footer>
+        <div class="footer-contact">
+            <h1>แจ้งปัญหา</h1>
+            <a href=""><h5><i class='bx bxl-facebook-circle'></i></h5></a>
+        </div>
+    </footer>
+</body>
+<style>
+    footer{
+        margin-top: 140px;
+        background-color: #FFC1E8;
+        width: 100vw;
+    }        
+    .footer-contact{
+        display: flex;
+        
+    }
+    .footer h1{
+        color: #000000;
+        font-size: 18px;
+    }
+    .footer-contact h1{
+        margin-left: 1000px;
+    }
+    .footer-contact a h5 i{
+        width: 100px;
+        height: 50px;
+        font-size: 42px;
+        margin-left: 50px;
+        text-align: right;
+    }
+</style>
+</html>
