@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,13 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <nav> 
+    <nav>
         <div class="search">
             <input type="text" placeholder="search">
         </div>
@@ -24,32 +28,37 @@
     </nav>
 </body>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    body{
+
+    body {
         background-color: white;
         font-family: "Prompt", sans-serif;
     }
-    nav{
+
+    nav {
         background-color: #FFC1E8;
         width: 100vw;
         height: 100px;
         display: flex;
     }
-    input::placeholder{
+
+    input::placeholder {
         color: #B63586;
 
     }
-    nav .search{
+
+    nav .search {
         margin-left: 100px;
         padding-top: 20px;
     }
-    nav .search input{
+
+    nav .search input {
         color: #C679AA;
         background-color: white;
         border: 2px solid white;
@@ -59,10 +68,12 @@
         height: 50px;
         padding-left: 20px;
     }
-    nav .text-nav{
+
+    nav .text-nav {
         display: flex;
     }
-    nav .text-nav a{
+
+    nav .text-nav a {
         color: #B63586;
         font-size: 24px;
         margin-left: 50px;
@@ -70,64 +81,112 @@
         text-decoration: none;
         transition: 0.4s ease;
     }
-    nav .text-nav a:hover{
-        
+
+    nav .text-nav a:hover {
+
         color: rgb(16, 135, 233);
     }
-    nav .text-nav .a1{
+
+    nav .text-nav .a1 {
         padding-left: 200px;
     }
-    nav .text-nav img{
+
+    nav .text-nav img {
         width: 70px;
         height: 70px;
         background-color: #EB7AA5;
-        margin-left:70px ;
+        margin-left: 70px;
         margin-top: 10px;
         border-radius: 20px;
 
     }
-    @media(max-width:430px){
-        nav .search input{
+
+    @media(max-width:1024px) {
+        nav .text-nav a {
+            color: #B63586;
+            font-size: 18px;
+            margin-left: 30px;
+        }
+        nav .search {
+            margin-left: 20px;
+            padding-top: 20px;
+        }
+        nav .search input {
+        font-size: 24px;
+        border-radius: 20px;
+        width: 250px;
+        height: 40px;
+        padding-left: 20px;
+       }
+        nav .text-nav .a1 {
+            padding-left: 20px;
+        }
+        nav .text-nav img{
+            margin-left: 30px;
+        }
+    }
+
+    @media(max-width:430px) {
+        nav .search input {
             width: 250px;
             height: 40px;
         }
-        nav .text-nav{
+
+        nav .text-nav {
             display: none;
         }
-        nav .search{
-            margin-left:25px;
+
+        nav .search {
+            margin-left: 25px;
         }
     }
 </style>
+
 <body>
     <main>
         <div class="menu" id="myMenu">
-            <a href="" class="text-main"><h1>หมวดสินค้า</h1></a>
+            <a href="" class="text-main">
+                <h1>หมวดสินค้า</h1>
+            </a>
             <div class="all">
-                <a href=""><h1>อาหาร</h1></a>
-                <a href=""><h1>เครื่องประดับ</h1></a>
-                <a href=""><h1>อุปกรณ์การเรียน</h1></a>
-                <a href=""><h1>หนังสือ</h1></a>
-                <a href=""><h1>การ์ด</h1></a>
+                <a href="">
+                    <h1>อาหาร</h1>
+                </a>
+                <a href="">
+                    <h1>เครื่องประดับ</h1>
+                </a>
+                <a href="">
+                    <h1>อุปกรณ์การเรียน</h1>
+                </a>
+                <a href="">
+                    <h1>หนังสือ</h1>
+                </a>
+                <a href="">
+                    <h1>การ์ด</h1>
+                </a>
             </div>
         </div>
     </main>
 </body>
 <style>
-    main{
+    main {
         width: 100vw;
     }
-    .menu{
+
+    .menu {
         display: flex;
         margin-top: 20px;
     }
-    .menu .text-main{
+
+    .menu .text-main {
         margin-left: 50px;
     }
-    .menu .all{
+
+    .menu .all {
         display: flex;
     }
-    .menu .text-main h1{
+
+    .menu .text-main h1 {
         background-color: #FFC1E8;
         width: 150px;
         height: 50px;
@@ -135,26 +194,41 @@
         padding-top: 5px;
         border-radius: 20px;
     }
-    .menu a{
+
+    .menu a {
         text-decoration: none;
     }
-    .menu a h1{
+
+    .menu a h1 {
         font-size: 20px;
         margin-left: 100px;
-       color: #DB55A9;
+        color: #DB55A9;
     }
-    @media(max-width:430px){
-        .menu .all{
-            display: none;
-        }
+
+    @media (max-width:1024px){
         .menu .text-main{
-            margin-left: 10px;
+            margin-left: 20px;
         }
         .menu a h1{
+            margin-left: 30px;
+            font-size: 18px;
+        }
+    }
+    @media(max-width:430px) {
+        .menu .all {
+            display: none;
+        }
+
+        .menu .text-main {
+            margin-left: 10px;
+        }
+
+        .menu a h1 {
             margin-left: 30px;
         }
     }
 </style>
+
 <body>
     <div class="box-all">
         <div class="box-1">
@@ -162,28 +236,36 @@
             <h2>ราคา : 100 บาท</h2>
             <img src="https://tse1.mm.bing.net/th?id=OIP.r_V1rTZB15NMmQTha4DUvgHaHa&pid=Api&P=0&h=220" alt="">
             <h3>รายละเอียด : สินค้าเพื่อสุขภาพ55555555</h3>
-            <a href=""><h4>สั่งซื้อ</h4></a>
+            <a href="">
+                <h4>สั่งซื้อ</h4>
+            </a>
         </div>
         <div class="box-1">
             <h1>ชื่อผู้ขาย : 18197 นายอดิลักษณ์ ปามา 406</h1>
             <h2>ราคา : 100 บาท</h2>
             <img src="https://tse1.mm.bing.net/th?id=OIP.r_V1rTZB15NMmQTha4DUvgHaHa&pid=Api&P=0&h=220" alt="">
             <h3>รายละเอียด : สินค้าเพื่อสุขภาพ55555555</h3>
-            <a href=""><h4>สั่งซื้อ</h4></a>
-        </div><div class="box-1">
+            <a href="">
+                <h4>สั่งซื้อ</h4>
+            </a>
+        </div>
+        <div class="box-1">
             <h1>ชื่อผู้ขาย : 18197 นายอดิลักษณ์ ปามา 406</h1>
             <h2>ราคา : 100 บาท</h2>
             <img src="https://tse1.mm.bing.net/th?id=OIP.r_V1rTZB15NMmQTha4DUvgHaHa&pid=Api&P=0&h=220" alt="">
             <h3>รายละเอียด : สินค้าเพื่อสุขภาพ55555555</h3>
-            <a href=""><h4>สั่งซื้อ</h4></a>
+            <a href="">
+                <h4>สั่งซื้อ</h4>
+            </a>
         </div>
     </div>
 </body>
 <style>
-    .box-all{
+    .box-all {
         display: flex;
     }
-    .box-1{
+
+    .box-1 {
         width: 400px;
         height: 400px;
         background-color: #64C7FF;
@@ -191,32 +273,38 @@
         margin-top: 50px;
         border-radius: 20px;
     }
-    .box-1 h1,h2{
+
+    .box-1 h1,
+    h2 {
         text-align: center;
         font-size: 18px;
         margin-top: 10px;
         color: #f264be;
     }
-    .box-1 img{
+
+    .box-1 img {
         align-items: center;
         display: flex;
         margin: auto;
         justify-content: center;
-       width: 200px;
-       height: 200px;
-       margin-top: 20px;
-       border-radius: 20px;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        border-radius: 20px;
     }
-    .box-1 h3{
+
+    .box-1 h3 {
         margin-top: 10px;
         font-size: 18px;
         text-align: center;
         color: #f264be;
     }
-    .box-1 a{
+
+    .box-1 a {
         text-decoration: none;
     }
-    .box-1 a h4{
+
+    .box-1 a h4 {
         font-size: 18px;
         width: 100px;
         height: 50px;
@@ -230,47 +318,99 @@
         transition: 0.3s ease;
         margin-left: 150px;
     }
-    @media (max-width:430px){
-        .box-all{
+    @media (max-width:1024px){
+        .box-1 {
+        width: 250px;
+        height: 270px;
+        background-color: #64C7FF;
+        margin-left: 20px;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+        .box-1 h1,
+        h2 {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 10px;
+        color: #f264be;
+    }
+    .box-1 img {
+        width: 100px;
+        height: 100px;
+    }
+    .box-1 h3 {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .box-1 a h4 {
+        font-size: 18px;
+        width: 100px;
+        height: 50px;
+        margin-left: 80px;
+    }
+
+    }
+    @media (max-width:430px) {
+        .box-all {
             display: block;
         }
-        .box-1{
+
+        .box-1 {
             margin-left: 0px;
         }
     }
 </style>
+
 <body>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <footer>
         <div class="footer-contact">
             <h1>แจ้งปัญหา</h1>
-            <a href=""><h5><i class='bx bxl-facebook-circle'></i></h5></a>
+            <a href="">
+                <h5><i class='bx bxl-facebook-circle'></i></h5>
+            </a>
         </div>
     </footer>
 </body>
 <style>
-    footer{
+    footer {
         margin-top: 140px;
         background-color: #FFC1E8;
         width: 100vw;
-    }        
-    .footer-contact{
-        display: flex;
-        
     }
-    .footer h1{
+
+    .footer-contact {
+        display: flex;
+
+    }
+
+    .footer h1 {
         color: #000000;
         font-size: 18px;
     }
-    .footer-contact h1{
+
+    .footer-contact h1 {
         margin-left: 1000px;
     }
-    .footer-contact a h5 i{
+
+    .footer-contact a h5 i {
         width: 100px;
         height: 50px;
         font-size: 42px;
         margin-left: 50px;
         text-align: right;
+    }
+    @media(max-width:1024px){
+        .footer-contact h1 {
+        margin-left: 500px;
+    }
+    .footer-contact a h5 i {
+        width: 100px;
+        height: 50px;
+        font-size: 42px;
+        margin-left: 10px;
+    }
+
     }
 </style>
 </html>
