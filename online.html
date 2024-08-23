@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidehead">
+                <div class="dots">
+                    <i class="fa-solid fa-circle" style="color:red;"></i>
+                    <i class="fa-solid fa-circle" style="color: yellow"></i>
+                    <i class="fa-solid fa-circle" style="color: greenyellow;"></i>
+                </div>
+                <hr style="margin:15px 0; border: 1px solid gray;">
+            </div>
+            <div class="sidebody" style="height: 69vh;">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search..." id="searchBar" name="searchBar">
+                    <i class="fa-solid fa-magnifying-glass glass"></i>
+                </div>
+            </div>
+            <div class="sidefoot">
+                <hr style="margin: 15px 0; border: 1px solid gray;">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100027601597093&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="./mix3firstreels.html"><button>Back</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="data">
+            <div class="top">
+                <p>Contact : 18197@skr.ac.th</p>
+            </div>
+            <div class="header">
+                <p>SKR-Preorder For Suankularb Rungsit School</p>
+            </div>
+            <div class="body">
+               <div id="root"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family:"Prompt", sans-serif;
+    }
+
+    body {
+        margin: 4vh;
+        
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar {
+        width: 25%;
+        border: 2px solid white;
+        border-radius: 3px;
+        padding: 15px;
+        height: 92vh;
+        box-shadow: 0px 0px 3px gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .data {
+        width: 73%;
+        border-radius: 3px;
+        height: 92vh;
+        overflow-y: auto;
+    }
+
+    .searchbar {
+        width: 100%;
+        background-color: #eee;
+        border-radius: 3px;
+        padding: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background: none;
+        width: 100%;
+    }
+
+    .glass {
+        transition: 0.2s ease;
+    }
+
+    .glass:hover {
+        color: orangered;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fa-brands {
+        font-size: 25px;
+        margin: 0 10px;
+        color: #333;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    .fa-brands:hover {
+        color: orangered;
+        transition: 0.2s ease;
+    }
+
+    .top {
+        height: 60px;
+        border-radius: 3px;
+        background-color: gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .top>p {
+        color: white;
+    }
+
+    .header {
+        height: 120px;
+        border-radius: 3px;
+        background-color: #333;
+        margin: 3vh 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+    }
+    #root{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+        width: 100%;
+        grid-gap:10px;
+        
+    }
+    .box{
+        margin: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #333;
+        border-radius: 5px;
+
+    }
+    .img-box{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .images{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: center;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+    .bottom{
+        margin-top:5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 110px;
+        
+    }
+    .bottom>p{
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+    h2{
+        font-size: 16px;
+        color: orangered;
+        padding-top: 10px;
+    }
+    button{
+        width: 100%;
+        position: relative;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        padding: 7px 25px;
+        cursor: pointer;
+        color: white;
+        transition: 0.2s ease;
+    }
+    button:hover{
+        background-color: orangered;
+        transition: 0.2s ease;
+    }
+   .img-box>h3{
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 400;
+   }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+
+</style>
+<script>
+    const product = [
+        {
+            id: 0,
+            terb:'18197 นายอดิลักษณ์ ปามา',
+            image: 'Lineranger3.jpg',
+            title: 'Line Ranger:1 ไมกี้ + อินุยาฉะ โดนแน่นอน 1',
+            price: 210
+        },
+        {
+            id: 1,
+            terb:'18197 นายอดิลักษณ์ ปามา',
+            image: 'Lineranger2.jpg',
+            title: 'Line Ranger:2 บราวร็อค + 1 คู่เทพ กบ 9*4 โดนแน่นอน 8 ดาว 1',
+            price: 270
+        },
+        {
+            id: 2,
+            terb: '18197 นายอดิลักษณ์ ปามา',
+            image: 'Lineranger1.jpg',
+            title: 'Line Ranger:3 ฟรีเรน + โดนแน่นอน 1',
+            price: 80
+        },
+        
+    ]
+    const categories = [...new Set(product.map((item) => {return item}))]
+    document.getElementById('searchBar').addEventListener('keyup', (e) => {
+        const searchData = e.target.value.toLowerCase();
+        const filterData = categories.filter((item) => {
+            return(
+                item.title.toLocaleLowerCase().includes(searchData)
+            )
+        })
+        displayItem(filterData)
+    });
+    const displayItem = (items) => {
+    document.getElementById('root').innerHTML = items.map((item) => {
+        var { terb,image, title, price } = item;
+        return`
+            <div class="box">
+                <div class="img-box">
+                    <h3>${terb}</h3>
+                    <img class="images" src="${image}">
+                </div>
+                <div class="bottom">
+                    <p>${title}</p>
+                    <h2>฿ ${price}.00</h2>
+                    <a href="https://www.facebook.com/profile.php?id=100027601597093&mibextid=LQQJ4d"><button>Add</button></a>
+                </div>
+            </div>`;
+    }).join(''); // Join to concatenate the array of strings into a single string
+};
+
+    displayItem(categories);
+
+</script>
+
+</html>

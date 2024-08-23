@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKR-Preorder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar">
+    <input type="text" class="search-bar" placeholder="ค้นหา" id="search" style="background-color: #ffffff; color: #B63586; border: 2px solid black;">
+    <div class="menu">
+        <a href="./mix3firstreels.html"><button style="background-color: white; border: 2px solid white;">back</button></a>
+        <a href="#" id="cart" style="color: #B63586;">รถเข็น</a>
+        <a href="#" style="color: #B63586;">คำสั่งซื้อ</a>
+        <a href="#" style="color: #B63586;">การแจ้งเตือน</a>
+        <a href="#" style="color: #B63586;">ข้อความ</a>
+        <div class="profile"></div>
+    </div>
+</div>
+
+<div class="category-bar">
+    <button>หมวดสินค้า</button>
+    <button onclick="scrollToFood()">อาหาร</button>
+    <button onclick="scrollToCosmetic()">เครื่องประดับ</button>
+    <button onclick="scrollToStudent()">อุปกรณ์การเรียน</button>
+    <button onclick="scrollToBook()">หนังสือ</button>
+    <button onclick="scrollToCard()">การ์ด</button>
+    <button onclick="scrollToMore()">อื่นๆ...</button>
+</div>
+
+<div class="product-grid">
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="./beltstyle.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า : สายรัดเข็มขัด</div>
+        <div class="price">ราคา: 50฿</div>
+        <div class="details">รายละเอียดสินค้า: ใช้เพื่อรัดเข็มขัดของนักเรียนหญิง</div>
+        <div class="purchase"><button><a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="./cookie.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า : cookie chocolate ship</div>
+        <div class="price">ราคา 20฿ ต่อ 1 ชิ้น</div>
+        <div class="details">รายละเอียดสินค้า: อาหารหวาน</div>
+        <div class="purchase"><button><a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="./pen.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า: ปากกาลูกลื่น</div>
+        <div class="price">ราคา 30฿</div>
+        <div class="details">รายละเอียดสินค้า : ปากกาลูกลื่นใช้สำหรับการเขียน</div>
+        <div class="purchase"><button><a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="./teramisu.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า : ทีรามิสุเค้ก</div>
+        <div class="price">ราคา 50฿</div>
+        <div class="details">รายละเอียดสินค้า: สินค้าสำหรับรับประทาน</div>
+        <div class="purchase"><button><a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">สั่งซื้อ</a></button></div>
+    </div>
+</div>
+<div class="food" id="food">
+    <h1>Food</h1>
+</div>
+<div class="product-grid">
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="./cookie.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า : cookie chocolate ship</div>
+        <div class="price">ราคา 20฿ ต่อ 1 ชิ้น</div>
+        <div class="details">รายละเอียดสินค้า: อาหารหวาน</div>
+        <div class="purchase"><button><a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="./teramisu.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า : ทีรามิสุเค้ก</div>
+        <div class="price">ราคา 50฿</div>
+        <div class="details">รายละเอียดสินค้า: สินค้าสำหรับรับประทาน</div>
+        <div class="purchase"><button><a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า</div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า</div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า</div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า</div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+</div>
+<div class="cosmetic" id="cosmetic">
+    <h1 id="Cosmetic">Cosmetic</h1>
+</div>
+<div class="product-grid">
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="./beltstyle.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า : สายรัดเข็มขัด</div>
+        <div class="price">ราคา: 50฿</div>
+        <div class="details">รายละเอียดสินค้า: ใช้เพื่อรัดเข็มขัดของนักเรียนหญิง</div>
+        <div class="purchase"><button><a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+</div>
+<div class="student" id="student">
+    <h1>Student item</h1>
+</div>
+<div class="product-grid">
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="./beltstyle.jpg" alt="สินค้า">
+        <div class="name">ชื่อสินค้า : สายรัดเข็มขัด</div>
+        <div class="price">ราคา: 50฿</div>
+        <div class="details">รายละเอียดสินค้า: ใช้เพื่อรัดเข็มขัดของนักเรียนหญิง</div>
+        <div class="purchase"><button><a href="https://www.instagram.com/tonnum.a?igsh=OXFxY2t0MnNpZzJ5&utm_source=qr">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+</div>
+<div class="book" id="book">
+    <h1>Book</h1>
+</div>
+<div class="product-grid">
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา: 20฿</div>
+        <div class="details">รายละเอียดสินค้า: ใช้ในการดมเพื่อสูดกลิ่นหอม</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ขนมอบกรอบ</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+</div>
+<div class="Card" id="Card">
+    <h1>Card</h1>
+</div>
+<div class="product-grid">
+    <div class="product" id="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า : น้ำยาหอมระเหย</p></div>
+        <div class="price">ราคา: 20฿</div>
+        <div class="details">รายละเอียดสินค้า: ใช้ในการดมเพื่อสูดกลิ่นหอม</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product" id="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product" id="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+
+    </div>
+    <div class="product" id="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product" id="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+    <div class="product" id="product">
+        <p class="username">ผู้ขาย:18197 นายอดิลักษณ์ ปามา</p>
+        <img src="https://cdn.windowsreport.com/wp-content/uploads/2020/10/IMG-file.jpg" alt="สินค้า">
+        <div class="name"><p>ชื่อสินค้า</p></div>
+        <div class="price">ราคา ฿</div>
+        <div class="details">รายละเอียดสินค้า</div>
+        <div class="purchase"><button><a href="">สั่งซื้อ</a></button></div>
+    </div>
+</div>
+</div>
+
+
+<div class="footer">
+    <h1>แจ้งปัญหา</h1>
+    <div class="footer-logo">
+
+    </div>
+</div>
+
+</body>
+</html>
+    <style>
+        *{
+            font-family:"Prompt", sans-serif;
+        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar {
+    background-color: #ffccff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar input::placeholder{
+    color: #B63586;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    transition: 0.4s ease;
+}
+
+.navbar .menu a:hover {
+    background-color: #ff99cc;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+   color: #ff66b2;
+   background-color: #fdbdfd;
+   border: 2px solid blue;
+}
+
+.category-bar {
+    background-color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-bar button {
+    background-color: #ffccff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.category-bar button:hover {
+    background-color: #ff99cc;
+    transition: 0.4s ease;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1.2fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.product {
+    background-color: white;
+    border: 2px solid #64C7FF;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    /*box-shadow: 0.1em 0.1em 0.1em gray;*/
+}
+
+.product .username{
+    color: #2673C4;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product .name {
+    margin: 0.5rem 0;
+    color: #2673C4;
+}
+
+.product .price {
+    color: #ff66b2;
+}
+.product .details{
+    color: #62A5ED;
+}
+
+.product .purchase{
+    padding-top: 10px;
+    cursor: pointer;
+}
+.product button{
+    background-color:#fdbdfd;
+    border: 2px solid #ff66b2;
+    transition: 0.4s ease;
+}
+.product .purchase a{
+    text-decoration: none;
+    color: black;
+    
+}
+.product button:hover{
+    transition: 0.4s ease;
+    background-color: #ff66b2;
+    border: 2px solid #fdbdfd;
+}
+.food,.student,.book,.Card,.more{
+    text-align: center;
+    background-color: #ffccff;
+    width: 100%;
+    height: 50px;
+}
+.food,.student,.book,.Card,.more,h1{
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+.cosmetic{
+    text-align: center;
+    background-color: #ffccff;
+    width: 100%;
+    height: 50px;
+}
+.cosmetic h1{
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+.snapchat{
+    background-image: url(https://www.pngmart.com/files/16/Chat-Icon-PNG-Pic.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    padding: 1rem;
+}
+
+.snapchat h1{
+    text-align: center;
+    
+}
+.snapchat:hover{
+   transform: scale(1.2);
+   filter: blur();
+   transition: 0.3s ease;
+   height: auto;
+}
+.input-box{
+    width: 100%;
+    background-image: url(https://www.pngmart.com/files/16/Chat-Icon-PNG-Pic.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    
+
+}
+.all-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.footer h1{
+    background-color: #ffccff;
+    padding: 1rem;
+    text-align: right;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+
+    </style>
+    <script>
+        const cart = document.getElementById("cart")
+        cart.addEventListener("click",function(){
+            window.alert("Update later")
+        })
+        function scrollToFood(){
+            const food = document.getElementById("food")
+            food.scrollIntoView({behavior:"smooth"})
+        }
+        function scrollToCosmetic(){
+            const cosmetic = document.getElementById("Cosmetic")
+            cosmetic.scrollIntoView({behavior:"smooth"})
+        }
+        function scrollToStudent(){
+            const student = document.getElementById("student")
+            student.scrollIntoView({behavior:"smooth"})
+        }
+        function scrollToBook(){
+            const book = document.getElementById("book")
+            book.scrollIntoView({behavior:"smooth"})
+        }
+        function scrollToCard(){
+            const card = document.getElementById("Card")
+            card.scrollIntoView({behavior:"smooth"})
+        }
+        function scrollToMore(){
+            const more = document.getElementById("more")
+            more.scrollIntoView({behavior:"smooth"})
+        }
+    </script>
