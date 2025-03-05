@@ -1,417 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <title>Shino Shop</title>
+    <link rel="stylesheet" href="learn.css">
 </head>
-
 <body>
+    <header>
+        <img src="https://wallpapers.com/images/hd/crayon-shin-chan-shinnosuke-and-dog-4jh59e4tzbs7mdvr.jpg" alt="">
+        <h1>Welcome To Shino Shop</h1>
+    </header>
+    <!--Navigation Bar-->
     <nav>
-        <div class="search">
-            <input type="text" placeholder="search">
-        </div>
-        <div class="text-nav">
-            <a href="" class="a1">รถเข็น</a>
-            <a href="">คำสั่งซื้อ</a>
-            <a href="">การแจ้งเตือน</a>
-            <a href="">ข้อความ</a>
-            <img src="http://pluspng.com/img-png/user-png-icon-big-image-png-2240.png" alt="">
+        <div class="container">
+            <div class="nav-list">
+                <a href="#" onclick="ScrollToMaintxt()">Popular-item</a>
+                <a href="#" onclick="ScrollToMain2()">Recommended-item</a>
+                <a href="#">Game-item</a>
+                <a href="./Joke.html">ลองกดดุสิ</a>
+            </div>
         </div>
     </nav>
-</body>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        background-color: white;
-        font-family: "Prompt", sans-serif;
-    }
-
-    nav {
-        background-color: #FFC1E8;
-        width: 100vw;
-        height: 100px;
-        display: flex;
-    }
-
-    input::placeholder {
-        color: #B63586;
-
-    }
-
-    nav .search {
-        margin-left: 100px;
-        padding-top: 20px;
-    }
-
-    nav .search input {
-        color: #C679AA;
-        background-color: white;
-        border: 2px solid white;
-        font-size: 24px;
-        border-radius: 20px;
-        width: 300px;
-        height: 50px;
-        padding-left: 20px;
-    }
-
-    nav .text-nav {
-        display: flex;
-    }
-
-    nav .text-nav a {
-        color: #B63586;
-        font-size: 24px;
-        margin-left: 50px;
-        padding-top: 25px;
-        text-decoration: none;
-        transition: 0.4s ease;
-    }
-
-    nav .text-nav a:hover {
-
-        color: rgb(16, 135, 233);
-    }
-
-    nav .text-nav .a1 {
-        padding-left: 200px;
-    }
-
-    nav .text-nav img {
-        width: 70px;
-        height: 70px;
-        background-color: #EB7AA5;
-        margin-left: 70px;
-        margin-top: 10px;
-        border-radius: 20px;
-
-    }
-
-    @media(max-width:1024px) {
-        nav .text-nav a {
-            color: #B63586;
-            font-size: 18px;
-            margin-left: 30px;
-        }
-        nav .search {
-            margin-left: 20px;
-            padding-top: 20px;
-        }
-        nav .search input {
-        font-size: 24px;
-        border-radius: 20px;
-        width: 250px;
-        height: 40px;
-        padding-left: 20px;
-       }
-        nav .text-nav .a1 {
-            padding-left: 20px;
-        }
-        nav .text-nav img{
-            margin-left: 30px;
-        }
-    }
-
-    @media(max-width:430px) {
-        nav .search input {
-            width: 250px;
-            height: 40px;
-        }
-
-        nav .text-nav {
-            display: none;
-        }
-
-        nav .search {
-            margin-left: 25px;
-        }
-    }
-</style>
-
-<body>
+    <!--Navigation Bar-->
+    <!--Main-->
     <main>
-        <div class="menu" id="myMenu">
-            <a href="" class="text-main">
-                <h1>หมวดสินค้า</h1>
-            </a>
-            <div class="all">
-                <a href="">
-                    <h1>อาหาร</h1>
-                </a>
-                <a href="">
-                    <h1>เครื่องประดับ</h1>
-                </a>
-                <a href="">
-                    <h1>อุปกรณ์การเรียน</h1>
-                </a>
-                <a href="">
-                    <h1>หนังสือ</h1>
-                </a>
-                <a href="">
-                    <h1>การ์ด</h1>
-                </a>
+        <div class="main-text" id="maintxt">
+            <p>Popular-item</p>
+        </div>
+        <!--product 1-->
+        <div class="popular-item">
+            <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
+            </div>
+              <!--product 2-->
+              <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
+            </div>
+              <!--product 3-->
+              <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
+            </div>
+              <!--product 4-->
+              <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
+            </div>
+              <!--product 5-->
+              <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
+            </div>
+              <!--product 6-->
+              <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-text" id="main2">
+            <p>Recommended-item</p>
+        </div>
+        <!--product 1-->
+        <div class="popular-item">
+            <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
+            </div>
+              <!--product 2-->
+              <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
+            </div>
+              <!--product 3-->
+              <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
+            </div>
+              <!--product 4-->
+              <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
+            </div>
+              <!--product 5-->
+              <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
+            </div>
+              <!--product 6-->
+              <div class="products">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/48265441-add4-48b6-99ce-fb71117c63bb/dfgn4hn-ccaed2ac-2678-47ca-9f48-c8c349f41c77.png/v1/fill/w_856,h_934/shinnosuke_nohara_shin_chan_png_by_zelrom_dfgn4hn-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzQ4MjY1NDQxLWFkZDQtNDhiNi05OWNlLWZiNzExMTdjNjNiYlwvZGZnbjRobi1jY2FlZDJhYy0yNjc4LTQ3Y2EtOWY0OC1jOGMzNDlmNDFjNzcucG5nIiwid2lkdGgiOiI8PTkzOSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.jFffrFpuYjjsRihExZewF2SMhIWBfXfCADY4z7cg4M4" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere fuga blanditiis.</p>
+                <div class="flex">
+                    <div class="product-left">
+                        <p>price</p>
+                    </div>
+                    <div class="product-right">
+                        <p>ขายแล้ว</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <!--Main-->
 </body>
-<style>
-    main {
-        width: 100vw;
-    }
-
-    .menu {
-        display: flex;
-        margin-top: 20px;
-    }
-
-    .menu .text-main {
-        margin-left: 50px;
-    }
-
-    .menu .all {
-        display: flex;
-    }
-
-    .menu .text-main h1 {
-        background-color: #FFC1E8;
-        width: 150px;
-        height: 50px;
-        text-align: center;
-        padding-top: 5px;
-        border-radius: 20px;
-    }
-
-    .menu a {
-        text-decoration: none;
-    }
-
-    .menu a h1 {
-        font-size: 20px;
-        margin-left: 100px;
-        color: #DB55A9;
-    }
-
-    @media (max-width:1024px){
-        .menu .text-main{
-            margin-left: 20px;
-        }
-        .menu a h1{
-            margin-left: 30px;
-            font-size: 18px;
-        }
-    }
-    @media(max-width:430px) {
-        .menu .all {
-            display: none;
-        }
-
-        .menu .text-main {
-            margin-left: 10px;
-        }
-
-        .menu a h1 {
-            margin-left: 30px;
-        }
-    }
-</style>
-
-<body>
-    <div class="box-all">
-        <div class="box-1">
-            <h1>ชื่อผู้ขาย : 18197 นายอดิลักษณ์ ปามา 406</h1>
-            <h2>ราคา : 100 บาท</h2>
-            <img src="https://tse1.mm.bing.net/th?id=OIP.r_V1rTZB15NMmQTha4DUvgHaHa&pid=Api&P=0&h=220" alt="">
-            <h3>รายละเอียด : สินค้าเพื่อสุขภาพ55555555</h3>
-            <a href="">
-                <h4>สั่งซื้อ</h4>
-            </a>
-        </div>
-        <div class="box-1">
-            <h1>ชื่อผู้ขาย : 18197 นายอดิลักษณ์ ปามา 406</h1>
-            <h2>ราคา : 100 บาท</h2>
-            <img src="https://tse1.mm.bing.net/th?id=OIP.r_V1rTZB15NMmQTha4DUvgHaHa&pid=Api&P=0&h=220" alt="">
-            <h3>รายละเอียด : สินค้าเพื่อสุขภาพ55555555</h3>
-            <a href="">
-                <h4>สั่งซื้อ</h4>
-            </a>
-        </div>
-        <div class="box-1">
-            <h1>ชื่อผู้ขาย : 18197 นายอดิลักษณ์ ปามา 406</h1>
-            <h2>ราคา : 100 บาท</h2>
-            <img src="https://tse1.mm.bing.net/th?id=OIP.r_V1rTZB15NMmQTha4DUvgHaHa&pid=Api&P=0&h=220" alt="">
-            <h3>รายละเอียด : สินค้าเพื่อสุขภาพ55555555</h3>
-            <a href="">
-                <h4>สั่งซื้อ</h4>
-            </a>
-        </div>
-    </div>
-</body>
-<style>
-    .box-all {
-        display: flex;
-    }
-
-    .box-1 {
-        width: 400px;
-        height: 400px;
-        background-color: #64C7FF;
-        margin-left: 50px;
-        margin-top: 50px;
-        border-radius: 20px;
-    }
-
-    .box-1 h1,
-    h2 {
-        text-align: center;
-        font-size: 18px;
-        margin-top: 10px;
-        color: #f264be;
-    }
-
-    .box-1 img {
-        align-items: center;
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        width: 200px;
-        height: 200px;
-        margin-top: 20px;
-        border-radius: 20px;
-    }
-
-    .box-1 h3 {
-        margin-top: 10px;
-        font-size: 18px;
-        text-align: center;
-        color: #f264be;
-    }
-
-    .box-1 a {
-        text-decoration: none;
-    }
-
-    .box-1 a h4 {
-        font-size: 18px;
-        width: 100px;
-        height: 50px;
-        text-align: center;
-        background-color: #C679AA;
-        border-radius: 20px;
-        padding-top: 10px;
-        color: #64C7FF;
-        text-shadow: 0.1em 0.1em 0.1em gray;
-        cursor: pointer;
-        transition: 0.3s ease;
-        margin-left: 150px;
-    }
-    @media (max-width:1024px){
-        .box-1 {
-        width: 250px;
-        height: 270px;
-        background-color: #64C7FF;
-        margin-left: 20px;
-        margin-top: 50px;
-        border-radius: 20px;
-    }
-        .box-1 h1,
-        h2 {
-        text-align: center;
-        font-size: 12px;
-        margin-top: 10px;
-        color: #f264be;
-    }
-    .box-1 img {
-        width: 100px;
-        height: 100px;
-    }
-    .box-1 h3 {
-        margin-top: 10px;
-        font-size: 12px;
-    }
-    .box-1 a h4 {
-        font-size: 18px;
-        width: 80px;
-        height: 40px;
-        margin-left: 90px;
-        margin-top: 10px;
-    }
-
-    }
-    @media (max-width:430px) {
-        .box-all {
-            display: block;
-        }
-
-        .box-1 {
-            margin-left: 70px;
-        }
-    }
-</style>
-
-<body>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <footer>
-        <div class="footer-contact">
-            <h1>แจ้งปัญหา</h1>
-            <a href="">
-                <h5><i class='bx bxl-facebook-circle'></i></h5>
-            </a>
-        </div>
-    </footer>
-</body>
-<style>
-    footer {
-        margin-top: 140px;
-        background-color: #FFC1E8;
-        width: 100vw;
-    }
-
-    .footer-contact {
-        display: flex;
-
-    }
-
-    .footer h1 {
-        color: #000000;
-        font-size: 18px;
-    }
-
-    .footer-contact h1 {
-        margin-left: 1000px;
-    }
-
-    .footer-contact a h5 i {
-        width: 100px;
-        height: 50px;
-        font-size: 42px;
-        margin-left: 50px;
-        text-align: right;
-    }
-    @media(max-width:1024px){
-        .footer-contact h1 {
-        margin-left: 500px;
-    }
-    .footer-contact a h5 i {
-        width: 100px;
-        height: 50px;
-        font-size: 42px;
-        margin-left: 10px;
-    }
-
-    }
-</style>
 </html>
+<script>
+    const maintxt = document.getElementById("maintxt")
+    function ScrollToMaintxt(){
+        maintxt.scrollIntoView({behavior:"smooth"})
+    }
+    const main2 = document.getElementById("main2")
+    function ScrollToMain2(){
+        main2.scrollIntoView({behavior:"smooth"})
+    }
+</script>
